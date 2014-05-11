@@ -24,8 +24,22 @@ torque = 200.0 #lb ft
 
 #Modulus of Elasticity of the bar
 modulus_elast = 29.0 * 10**6 #psi
+
+
 #Second area moment of inertia of the bar
-inertia = 3.1907 #in^4
+#inertia = 0.422 #in^4
+
+#For Square Tube
+outside_size = 1.0
+wall_thickness = 0.065
+inside_size = outside_size - (2.0 * wall_thickness)
+inertia = (outside_size**4 - inside_size**4) / 12.0
+
+#For Round Tube
+#outside_diameter = 1.5
+#inside_diameter = 1.5
+#inertia = Math::PI * (outside_diameter**4 - inside_diameter**4) / 64.0
+
 
 d = height + gap
 
