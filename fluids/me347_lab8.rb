@@ -2,6 +2,9 @@
 # Flow through a convering-divering nozzle
 # 
 # Compressible flow model for calculating Mach number and throat pressure ratio as a function of mass flowrate
+# 
+# Available at:
+# https://github.com/qpetty/me_coursework/blob/master/fluids/me347_lab8.rb
 
 
 # Mass flowrates from the Experiment
